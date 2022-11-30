@@ -7,7 +7,6 @@ class addFriendView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     @IBAction func confirm(_ sender: Any) {
