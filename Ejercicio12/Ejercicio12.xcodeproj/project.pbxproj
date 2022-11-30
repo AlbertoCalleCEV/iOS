@@ -15,6 +15,7 @@
 		0D8B2A172937670B00893E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8B2A152937670B00893E9E /* LaunchScreen.storyboard */; };
 		0D8B2A1F293769A600893E9E /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B2A1E293769A600893E9E /* Friends.swift */; };
 		0D8B2A2129376C9D00893E9E /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B2A2029376C9D00893E9E /* MyCell.swift */; };
+		0D8B2A252937934E00893E9E /* addFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B2A242937934E00893E9E /* addFriendView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0D8B2A182937670B00893E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D8B2A1E293769A600893E9E /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
 		0D8B2A2029376C9D00893E9E /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		0D8B2A242937934E00893E9E /* addFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addFriendView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				0D8B2A0A2937670A00893E9E /* AppDelegate.swift */,
 				0D8B2A0C2937670A00893E9E /* SceneDelegate.swift */,
 				0D8B2A0E2937670A00893E9E /* ViewController.swift */,
+				0D8B2A242937934E00893E9E /* addFriendView.swift */,
 				0D8B2A2029376C9D00893E9E /* MyCell.swift */,
 				0D8B2A1E293769A600893E9E /* Friends.swift */,
 				0D8B2A102937670A00893E9E /* Main.storyboard */,
@@ -146,6 +149,7 @@
 			files = (
 				0D8B2A0F2937670A00893E9E /* ViewController.swift in Sources */,
 				0D8B2A2129376C9D00893E9E /* MyCell.swift in Sources */,
+				0D8B2A252937934E00893E9E /* addFriendView.swift in Sources */,
 				0D8B2A0B2937670A00893E9E /* AppDelegate.swift in Sources */,
 				0D8B2A0D2937670A00893E9E /* SceneDelegate.swift in Sources */,
 				0D8B2A1F293769A600893E9E /* Friends.swift in Sources */,

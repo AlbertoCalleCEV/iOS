@@ -69,6 +69,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add friend"/>
                                 <connections>
+                                    <action selector="addFriend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="loV-Mb-qZC"/>
                                     <segue destination="WR3-mP-2xp" kind="show" id="765-AB-voJ"/>
                                 </connections>
                             </button>
@@ -102,7 +103,7 @@
         <scene sceneID="eWQ-sp-FA6">
             <objects>
                 <viewController id="WR3-mP-2xp" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rck-x6-KGv">
+                    <view key="view" contentMode="scaleToFill" id="rck-x6-KGv" customClass="ADdFriendView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -128,6 +129,9 @@
                                 <rect key="frame" x="150" y="456" width="114" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Confirm"/>
+                                <connections>
+                                    <action selector="confirm:" destination="rck-x6-KGv" eventType="touchUpInside" id="OYQ-zE-Fgw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W84-1j-Hkq">
                                 <rect key="frame" x="190" y="315" width="42" height="21"/>
@@ -154,6 +158,10 @@
                             <constraint firstItem="2yc-GZ-HhF" firstAttribute="top" secondItem="aC6-GN-XjZ" secondAttribute="top" constant="200" id="xVs-I5-7Eg"/>
                             <constraint firstItem="sgp-dk-jAK" firstAttribute="leading" secondItem="aC6-GN-XjZ" secondAttribute="leading" constant="58" id="yUR-SR-FS2"/>
                         </constraints>
+                        <connections>
+                            <outlet property="affinityLabel" destination="W84-1j-Hkq" id="l8w-gj-kOL"/>
+                            <outlet property="nameLabel" destination="2yc-GZ-HhF" id="1jk-Og-0X9"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="JBK-7F-4JZ"/>
                 </viewController>

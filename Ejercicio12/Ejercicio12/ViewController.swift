@@ -32,7 +32,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
-    
     @IBAction func orderButton(_ sender: Any) {
         friendList = friendList.sorted(by: { (friend1, friend2) -> Bool in
             return friend1.affinity.compare(friend2.affinity) == ComparisonResult.orderedAscending
