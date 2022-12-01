@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D7CB28F2938A7CF006AD8B0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CB28E2938A7CF006AD8B0 /* DataManager.swift */; };
 		0D8B2A0B2937670A00893E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B2A0A2937670A00893E9E /* AppDelegate.swift */; };
 		0D8B2A0D2937670A00893E9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B2A0C2937670A00893E9E /* SceneDelegate.swift */; };
 		0D8B2A0F2937670A00893E9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B2A0E2937670A00893E9E /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D7CB28E2938A7CF006AD8B0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		0D8B2A072937670A00893E9E /* Ejercicio12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ejercicio12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8B2A0A2937670A00893E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D8B2A0C2937670A00893E9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				0D8B2A0C2937670A00893E9E /* SceneDelegate.swift */,
 				0D8B2A0E2937670A00893E9E /* ViewController.swift */,
 				0D8B2A242937934E00893E9E /* addFriendView.swift */,
+				0D7CB28E2938A7CF006AD8B0 /* DataManager.swift */,
 				0D8B2A2029376C9D00893E9E /* MyCell.swift */,
 				0D8B2A1E293769A600893E9E /* Friends.swift */,
 				0D8B2A102937670A00893E9E /* Main.storyboard */,
@@ -150,6 +153,7 @@
 				0D8B2A0F2937670A00893E9E /* ViewController.swift in Sources */,
 				0D8B2A2129376C9D00893E9E /* MyCell.swift in Sources */,
 				0D8B2A252937934E00893E9E /* addFriendView.swift in Sources */,
+				0D7CB28F2938A7CF006AD8B0 /* DataManager.swift in Sources */,
 				0D8B2A0B2937670A00893E9E /* AppDelegate.swift in Sources */,
 				0D8B2A0D2937670A00893E9E /* SceneDelegate.swift in Sources */,
 				0D8B2A1F293769A600893E9E /* Friends.swift in Sources */,

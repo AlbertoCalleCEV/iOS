@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Friends {
+class Friends: Codable {
     let name: String
     let affinity: String
     
