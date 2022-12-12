@@ -19,9 +19,11 @@ class addFriendView: UIViewController {
                 nameText.backgroundColor = UIColor.white
                 DataManager.friends.append(Friends(name: String(name!), affinity: String(affinity!)))
                 DataManager.saveFriends()
+                performSegue(withIdentifier: "confirm", sender: sender)
             } else {
                 affinityText.backgroundColor = UIColor.red
             }
+            
         } else {
             nameText.backgroundColor = UIColor.red
         }

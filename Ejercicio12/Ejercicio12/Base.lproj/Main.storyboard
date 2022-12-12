@@ -91,6 +91,7 @@
                             <constraint firstItem="CTu-d8-68h" firstAttribute="top" secondItem="b6E-28-IeE" secondAttribute="bottom" constant="20" id="tPf-Kn-c3G"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="tGR-cz-lNa"/>
                     <connections>
                         <outlet property="tableView" destination="eoV-Eb-xbV" id="nog-pU-RO2"/>
                     </connections>
@@ -162,6 +163,9 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="JBK-7F-4JZ"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="confirm" modalPresentationStyle="fullScreen" id="hYX-OF-qW5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQ8-Tp-fyy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
