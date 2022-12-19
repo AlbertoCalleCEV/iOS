@@ -27,4 +27,4 @@ Mira, impresionante texto en **negrita**
 ---
 [Enlace de prueba](https://www.cev.com/)
 
-![Una imagen aleatoria]([imagen.jpg](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvoPB5CTPH6ndQ8v4IsELURVAw2SoJowMeCQ&usqp=CAU))
+![Una imagen aleatoria]([/imagen.jpg](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvoPB5CTPH6ndQ8v4IsELURVAw2SoJowMeCQ&usqp=CAU))
