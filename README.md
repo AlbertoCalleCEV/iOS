@@ -7,12 +7,12 @@
 
 *Texto borracho, porque esta inclinado jaja akka cursiva*
 
-**Cosas que quiero terminar**
+**Cosas que quiero terminar:**
 - Tarea 2 de gestión
 - El Markdown
 - Ejercicio de iOS
 
-**Enumeración de numeros**
+**Enumeración de números:**
 1. Uno
 2. Dos
 3. Tres
