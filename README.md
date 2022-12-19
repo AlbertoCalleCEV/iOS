@@ -3,7 +3,7 @@
 ### Esto es un subtítulo x2, más conocido como subsubtítulo.
 #### Esto es un subsubsubtítulo.
 
-**Mira, impresionante texto en negrita**
+Mira, impresionante texto en **negrita**
 
 *Texto borracho, porque esta inclinado jaja akka cursiva*
 
