@@ -25,6 +25,6 @@ Mira, impresionante texto en **negrita**
 
 ¡UNA LÍNEA HORIZONTAL!
 ---
-[Enlace de prueba] (https://www.cev.com/)
+[Enlace de prueba](https://www.cev.com/)
 
-[Una imagen aleatoria] (imagen.jpg)
+[Una imagen aleatoria]([imagen.jpg](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvoPB5CTPH6ndQ8v4IsELURVAw2SoJowMeCQ&usqp=CAU))
