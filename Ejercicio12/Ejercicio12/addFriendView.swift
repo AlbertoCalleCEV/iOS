@@ -1,7 +1,7 @@
 import UIKit
 
 class addFriendView: UIViewController {
-    
+
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var affinityText: UITextField!
     

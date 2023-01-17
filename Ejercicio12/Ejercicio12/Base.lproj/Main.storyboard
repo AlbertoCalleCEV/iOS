@@ -69,7 +69,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add friend"/>
                                 <connections>
-                                    <action selector="addFriend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="loV-Mb-qZC"/>
                                     <segue destination="WR3-mP-2xp" kind="show" id="765-AB-voJ"/>
                                 </connections>
                             </button>
@@ -100,11 +99,11 @@
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Friend View-->
         <scene sceneID="eWQ-sp-FA6">
             <objects>
-                <viewController id="WR3-mP-2xp" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rck-x6-KGv" customClass="ADdFriendView">
+                <viewController id="WR3-mP-2xp" customClass="addFriendView" customModule="Ejercicio12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rck-x6-KGv" customClass="AddFriendView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -125,7 +124,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Confirm"/>
                                 <connections>
-                                    <action selector="confirm:" destination="rck-x6-KGv" eventType="touchUpInside" id="0vP-rx-TIU"/>
+                                    <action selector="confirm:" destination="WR3-mP-2xp" eventType="touchUpInside" id="ZX2-Qk-thj"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9g8-N5-uOk">
@@ -157,13 +156,11 @@
                             <constraint firstItem="sgp-dk-jAK" firstAttribute="leading" secondItem="aC6-GN-XjZ" secondAttribute="leading" constant="58" id="yUR-SR-FS2"/>
                             <constraint firstItem="aC6-GN-XjZ" firstAttribute="trailing" secondItem="JU7-tC-gNv" secondAttribute="trailing" constant="50" id="z0f-2h-nhQ"/>
                         </constraints>
-                        <connections>
-                            <outlet property="affinityText" destination="JU7-tC-gNv" id="awu-fe-r9T"/>
-                            <outlet property="nameText" destination="9g8-N5-uOk" id="Acq-Xy-ate"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="JBK-7F-4JZ"/>
                     <connections>
+                        <outlet property="affinityText" destination="JU7-tC-gNv" id="Bq2-mi-i2x"/>
+                        <outlet property="nameText" destination="9g8-N5-uOk" id="Zgh-ai-8yP"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="confirm" modalPresentationStyle="fullScreen" id="hYX-OF-qW5"/>
                     </connections>
                 </viewController>
