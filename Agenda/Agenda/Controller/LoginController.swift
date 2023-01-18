@@ -26,17 +26,17 @@ class LoginController: UIViewController {
             
             URLSession.shared.dataTask(with: request){
                 (data, response, error) in
-                print(response as Any)
+                print("\nRESPONSE LOGIN:\n", response as Any)
                 if let error = error {
-                    print(error)
+                    print("\nERROR:\n", error)
                     return
                 }
                 guard let data = data else{
-                    print("Error al recivir data.")
+                    print("Error al recibir data.")
                     return
                 }
                 
-                print(data, String(data: data, encoding: .utf8) ?? "*unknown encoding*")
+                print("\nDATA LOGIN:\n",data, String(data: data, encoding: .utf8) ?? "*unknown encoding*")
                 
                 if String(data: data, encoding: .utf8) == "Login succesful" {
                     DispatchQueue.main.async {

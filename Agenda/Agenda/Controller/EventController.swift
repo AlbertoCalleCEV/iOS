@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
   
     
+    @IBOutlet weak var loading: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     var events: [Event] = []
     let url = URL(string: "https://superapi.netlify.app/api/db/eventos")
@@ -17,13 +18,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     override func viewWillAppear(_ animated: Bool) {
-        
         tableView.dataSource = self
         tableView.delegate = self
         
         URLSession.shared.dataTask(with: url!) {
             (data, response, error) in
-
+            
             if error == nil {
                 do {
                     // Pasamos los datos de JSON a Objeto de Swift.
@@ -32,13 +32,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     
                     for event in json as! [Any] {
                         if type(of: event) != NSNull.self {
-                            
-                            // Guardamos el json en el Array de eventos.
-                            self.events.append(Event(json: event as! [String : Any]))
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                [self] in
+                                loading.isHidden = false
+                                // Guardamos el json en el Array de eventos.
+                                events.append(Event(json: event as! [String : Any]))
+                                tableView.reloadData()
+                                loading.isHidden = true
+                            }
                         }
-                    }
-                    DispatchQueue.main.async {
-                        self.tableView.reloadData() // Refrescamos la tabla con los datos.
                     }
 
                 } catch {

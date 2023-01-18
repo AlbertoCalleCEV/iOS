@@ -291,6 +291,10 @@
                                     <segue destination="B3v-mV-4dK" kind="show" id="kgX-1E-zgt"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="w1B-GM-5Aw">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" red="0.0014803857120000001" green="1" blue="0.73968183499999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -298,13 +302,16 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4C3-q4-NN7" secondAttribute="trailing" constant="10" id="7yb-g7-Xyt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4C3-q4-NN7" secondAttribute="bottom" constant="200" id="Jni-dc-Lwh"/>
                             <constraint firstItem="J81-37-ja1" firstAttribute="top" secondItem="4C3-q4-NN7" secondAttribute="bottom" constant="50" id="KSc-3J-CNI"/>
+                            <constraint firstItem="w1B-GM-5Aw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PfB-Ij-hwW"/>
                             <constraint firstItem="4C3-q4-NN7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="TrH-fl-hns"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J81-37-ja1" secondAttribute="trailing" constant="20" id="cGL-ry-A09"/>
                             <constraint firstItem="4C3-q4-NN7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jaF-5h-gsU"/>
+                            <constraint firstItem="w1B-GM-5Aw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x5d-jU-8zT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Eventos" id="2ab-oh-ITe"/>
                     <connections>
+                        <outlet property="loading" destination="w1B-GM-5Aw" id="IJ1-Yg-bvI"/>
                         <outlet property="tableView" destination="4C3-q4-NN7" id="sfA-JO-gY2"/>
                     </connections>
                 </viewController>
