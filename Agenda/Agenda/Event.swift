@@ -1,11 +1,11 @@
 import Foundation
 import UIKit
 
-class Event: Codable {
+class Event {
     var name: String
     var date: Double
     
-    init(json: [String: Any]){
+    init(json: [String: Any]) {
         name = json["name"] as? String ?? ""
         date = json["date"] as? Double ?? 0
         print(date)

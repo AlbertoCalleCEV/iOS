@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D347FA12976A0740063C2F1 /* AddEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D347FA02976A0740063C2F1 /* AddEventController.swift */; };
+		0D4BA3B52977F19D0022FB67 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4BA3B42977F19D0022FB67 /* RegisterController.swift */; };
 		0D6D91BF296FF99600FE5115 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D91BE296FF99600FE5115 /* AppDelegate.swift */; };
 		0D6D91C1296FF99600FE5115 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D91C0296FF99600FE5115 /* SceneDelegate.swift */; };
 		0D6D91C3296FF99600FE5115 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D91C2296FF99600FE5115 /* EventController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		0D347FA02976A0740063C2F1 /* AddEventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventController.swift; sourceTree = "<group>"; };
+		0D4BA3B42977F19D0022FB67 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		0D6D91BB296FF99600FE5115 /* Agenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6D91BE296FF99600FE5115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D6D91C0296FF99600FE5115 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				0DA0811029717C8100E0F604 /* Event.swift */,
 				0DA0811229717CE800E0F604 /* User.swift */,
 				0D6D91C4296FF99600FE5115 /* Main.storyboard */,
+				0D4BA3B42977F19D0022FB67 /* RegisterController.swift */,
 				0D347FA02976A0740063C2F1 /* AddEventController.swift */,
 				0DD7F9E92975641000C12663 /* EventCell.swift */,
 				0D6D91C7296FF99800FE5115 /* Assets.xcassets */,
@@ -154,6 +157,7 @@
 				0DA0811129717C8100E0F604 /* Event.swift in Sources */,
 				0D6D91C3296FF99600FE5115 /* EventController.swift in Sources */,
 				0D6D91BF296FF99600FE5115 /* AppDelegate.swift in Sources */,
+				0D4BA3B52977F19D0022FB67 /* RegisterController.swift in Sources */,
 				0DA0811329717CE800E0F604 /* User.swift in Sources */,
 				0DD7F9EA2975641000C12663 /* EventCell.swift in Sources */,
 				0D6D91C1296FF99600FE5115 /* SceneDelegate.swift in Sources */,

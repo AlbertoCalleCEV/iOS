@@ -38,7 +38,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                         }
                     }
                     DispatchQueue.main.async {
-                        self.tableView.reloadData()
+                        self.tableView.reloadData() // Refrescamos la tabla con los datos.
                     }
 
                 } catch {
