@@ -96,6 +96,7 @@
                         <outlet property="cpassword" destination="3Ec-My-zOA" id="drh-rc-UGZ"/>
                         <outlet property="name" destination="bt9-kS-zbd" id="gpC-uf-ZW8"/>
                         <outlet property="password" destination="jsx-wN-cp4" id="wH3-t9-ir5"/>
+                        <segue destination="nWe-ei-GZZ" kind="presentation" identifier="register" modalPresentationStyle="fullScreen" id="XCx-e5-YiN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YpJ-eC-DAK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -105,11 +106,17 @@
         <!--Login-->
         <scene sceneID="7o1-hN-H6F">
             <objects>
-                <viewController id="lVk-SR-z7B" sceneMemberID="viewController">
+                <viewController id="lVk-SR-z7B" customClass="LoginController" customModule="Agenda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ije-Qd-oNi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2e5-Az-C75">
+                                <rect key="frame" x="20" y="79" width="374" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="e1j-Os-zBx">
                                 <rect key="frame" x="20" y="227" width="374" height="236"/>
                                 <subviews>
@@ -137,28 +144,44 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2e5-Az-C75">
-                                <rect key="frame" x="20" y="79" width="374" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdO-3v-cug">
+                                <rect key="frame" x="80" y="535" width="254" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="wJY-aK-M2c"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButton:" destination="lVk-SR-z7B" eventType="touchUpInside" id="iYb-Ys-lR6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YY1-oj-8aM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="YY1-oj-8aM" firstAttribute="trailing" secondItem="2e5-Az-C75" secondAttribute="trailing" constant="20" id="4dg-3j-waC"/>
+                            <constraint firstItem="QdO-3v-cug" firstAttribute="leading" secondItem="YY1-oj-8aM" secondAttribute="leading" constant="80" id="IC3-zO-Qfz"/>
                             <constraint firstItem="YY1-oj-8aM" firstAttribute="trailing" secondItem="e1j-Os-zBx" secondAttribute="trailing" constant="20" id="KA9-uW-FXQ"/>
+                            <constraint firstItem="QdO-3v-cug" firstAttribute="centerX" secondItem="Ije-Qd-oNi" secondAttribute="centerX" id="Mai-Wf-O61"/>
                             <constraint firstItem="e1j-Os-zBx" firstAttribute="leading" secondItem="YY1-oj-8aM" secondAttribute="leading" constant="20" id="WKJ-rh-NZn"/>
+                            <constraint firstItem="QdO-3v-cug" firstAttribute="top" secondItem="e1j-Os-zBx" secondAttribute="bottom" constant="72" id="etG-qX-EXL"/>
                             <constraint firstItem="e1j-Os-zBx" firstAttribute="top" secondItem="2e5-Az-C75" secondAttribute="bottom" constant="100" id="hBI-de-MYc"/>
                             <constraint firstItem="YY1-oj-8aM" firstAttribute="bottom" secondItem="e1j-Os-zBx" secondAttribute="bottom" constant="350" id="hb9-5F-Wud"/>
                             <constraint firstItem="YY1-oj-8aM" firstAttribute="trailing" secondItem="e1j-Os-zBx" secondAttribute="trailing" constant="20" id="j4W-Ym-v51"/>
+                            <constraint firstItem="YY1-oj-8aM" firstAttribute="trailing" secondItem="QdO-3v-cug" secondAttribute="trailing" constant="80" id="lHJ-uh-zdA"/>
                             <constraint firstItem="e1j-Os-zBx" firstAttribute="leading" secondItem="YY1-oj-8aM" secondAttribute="leading" constant="20" id="ppk-ee-tfi"/>
                             <constraint firstItem="2e5-Az-C75" firstAttribute="top" secondItem="YY1-oj-8aM" secondAttribute="top" constant="35" id="w9b-eH-rKZ"/>
                             <constraint firstItem="2e5-Az-C75" firstAttribute="leading" secondItem="YY1-oj-8aM" secondAttribute="leading" constant="20" id="zoI-Qp-avL"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Login" image="person" catalog="system" id="NLD-OH-jB5"/>
+                    <connections>
+                        <outlet property="password" destination="m3w-t9-CUE" id="Szt-Xd-3vb"/>
+                        <outlet property="username" destination="fjV-n8-yLb" id="nxd-jp-HHM"/>
+                        <segue destination="nWe-ei-GZZ" kind="presentation" identifier="login" modalPresentationStyle="fullScreen" id="Zee-wW-Yv9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kda-2P-MtI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -349,6 +372,9 @@
             <point key="canvasLocation" x="508.69565217391306" y="81.696428571428569"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Zee-wW-Yv9"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="apps.iphone" catalog="system" width="108" height="128"/>
         <image name="person" catalog="system" width="128" height="117"/>

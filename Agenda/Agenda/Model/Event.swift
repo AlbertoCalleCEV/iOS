@@ -8,7 +8,6 @@ class Event {
     init(json: [String: Any]) {
         name = json["name"] as? String ?? ""
         date = json["date"] as? Double ?? 0
-        print(date)
     }
 
     static func createDateTime(timestamp: Double) -> String {
