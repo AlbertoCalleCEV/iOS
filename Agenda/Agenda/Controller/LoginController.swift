@@ -19,10 +19,13 @@ class LoginController: UIViewController {
             let body: [String: String] = ["user": username.text!, "pass": password.text!]
             var request = URLRequest(url: url)
             
+            // Creamos una variable de User para guardarla de manera local
+            let user = User(nombre: username.text!)
+            
             // Pasamos a Json el Array.
             let finalBody = try? JSONSerialization.data(withJSONObject: body)
             request.httpMethod = "POST"
-            request.httpBody = finalBody //
+            request.httpBody = finalBody // 
             
             URLSession.shared.dataTask(with: request){
                 (data, response, error) in
@@ -36,16 +39,24 @@ class LoginController: UIViewController {
                     return
                 }
                 
+                // Te devuelve la respuesta del servidor.
                 print("\nDATA LOGIN:\n",data, String(data: data, encoding: .utf8) ?? "*unknown encoding*")
                 
                 if String(data: data, encoding: .utf8) == "Login succesful" {
                     DispatchQueue.main.async {
+                        user.saveUser() // ???
                         self.performSegue(withIdentifier: "login", sender: sender)
                     }
                 }
             }.resume()
         }
         else {
+            if username.text?.isEmpty == true {
+                username.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
+            }
+            if password.text?.isEmpty == true{
+                password.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
+            }
             print("Error")
         }
     }

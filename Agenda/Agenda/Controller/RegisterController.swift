@@ -22,6 +22,9 @@ class RegisterController: UIViewController {
             let body: [String: String] = ["user": name.text!, "pass": password.text!]
             var request = URLRequest(url: url)
             
+            // Creamos una variable de User para guardarla de manera local
+            let user = User(nombre: name.text!)
+            
             // Pasamos a Json el Array.
             let finalBody = try? JSONSerialization.data(withJSONObject: body)
             request.httpMethod = "POST"
@@ -35,6 +38,7 @@ class RegisterController: UIViewController {
                     return
                 } else {
                     DispatchQueue.main.async {
+                        user.saveUser() // ???
                         self.performSegue(withIdentifier: "register", sender: sender)
                     }
                 }
@@ -50,6 +54,14 @@ class RegisterController: UIViewController {
             }.resume()
         }
         else {
+            if name.text?.isEmpty == true {
+                name.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
+            }
+            if password.text != cpassword.text && password.text?.isEmpty == false{
+                password.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
+                cpassword.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
+            }
+            
             print("Error")
         }
     }

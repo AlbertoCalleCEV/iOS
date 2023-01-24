@@ -19,6 +19,7 @@
 		0DA0811129717C8100E0F604 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA0811029717C8100E0F604 /* Event.swift */; };
 		0DA0811329717CE800E0F604 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA0811229717CE800E0F604 /* User.swift */; };
 		0DD7F9EA2975641000C12663 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7F9E92975641000C12663 /* EventCell.swift */; };
+		0DE690C029793C6C003CC47B /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE690BF29793C6C003CC47B /* UserController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0DA0811029717C8100E0F604 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		0DA0811229717CE800E0F604 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0DD7F9E92975641000C12663 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		0DE690BF29793C6C003CC47B /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		0D4BA3B82978057E0022FB67 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0DE690BF29793C6C003CC47B /* UserController.swift */,
 				0D347FA02976A0740063C2F1 /* AddEventController.swift */,
 				0D4BA3B62977FFD20022FB67 /* LoginController.swift */,
 				0D4BA3B42977F19D0022FB67 /* RegisterController.swift */,
@@ -190,6 +193,7 @@
 			files = (
 				0D347FA12976A0740063C2F1 /* AddEventController.swift in Sources */,
 				0DA0811129717C8100E0F604 /* Event.swift in Sources */,
+				0DE690C029793C6C003CC47B /* UserController.swift in Sources */,
 				0D6D91C3296FF99600FE5115 /* EventController.swift in Sources */,
 				0D6D91BF296FF99600FE5115 /* AppDelegate.swift in Sources */,
 				0D4BA3B72977FFD20022FB67 /* LoginController.swift in Sources */,

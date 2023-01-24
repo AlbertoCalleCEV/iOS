@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-  
+    
     
     @IBOutlet weak var loading: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     
                     for event in json as! [Any] {
                         if type(of: event) != NSNull.self {
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                            DispatchQueue.main.async {
                                 [self] in
                                 loading.isHidden = false
                                 // Guardamos el json en el Array de eventos.
@@ -42,7 +42,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                             }
                         }
                     }
-
                 } catch {
                     print("Error en data")
                 }
@@ -58,8 +57,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: TableViewCell = tableView.dequeueReusableCell(withIdentifier: "eventID", for: indexPath) as! TableViewCell
+        
         cell.nameLabel.text = events[indexPath.row].name
         cell.dateLabel.text = Event.createDateTime(timestamp: Double(events[indexPath.row].date))
+        
         return cell
     }
 }
