@@ -33,12 +33,13 @@ class RegisterController: UIViewController {
             URLSession.shared.dataTask(with: request){
                 (data, response, error) in
                 print(response as Any)
+                // Imprime el error en caso de que haya un fallo
                 if let error = error {
                     print(error)
                     return
                 } else {
                     DispatchQueue.main.async {
-                        user.saveUser() // ???
+                        user.saveUser() // Guardamos el usuario creado anteriormente.
                         self.performSegue(withIdentifier: "register", sender: sender)
                     }
                 }

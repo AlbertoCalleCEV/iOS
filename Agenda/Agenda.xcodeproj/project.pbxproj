@@ -66,6 +66,7 @@
 		0D4BA3B9297805A40022FB67 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0D6D91C9296FF99800FE5115 /* LaunchScreen.storyboard */,
 				0DD7F9E92975641000C12663 /* EventCell.swift */,
 				0D6D91C4296FF99600FE5115 /* Main.storyboard */,
 			);
@@ -84,6 +85,7 @@
 		0D4BA3BB297806650022FB67 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0DA0811229717CE800E0F604 /* User.swift */,
 				0DA0811029717C8100E0F604 /* Event.swift */,
 			);
 			path = Model;
@@ -112,9 +114,7 @@
 				0D4BA3BA297805E20022FB67 /* Delegate */,
 				0D4BA3B9297805A40022FB67 /* View */,
 				0D4BA3B82978057E0022FB67 /* Controller */,
-				0DA0811229717CE800E0F604 /* User.swift */,
 				0D6D91C7296FF99800FE5115 /* Assets.xcassets */,
-				0D6D91C9296FF99800FE5115 /* LaunchScreen.storyboard */,
 				0D6D91CC296FF99800FE5115 /* Info.plist */,
 			);
 			path = Agenda;

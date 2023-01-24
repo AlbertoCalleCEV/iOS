@@ -9,7 +9,8 @@ class Event {
         name = json["name"] as? String ?? ""
         date = json["date"] as? Double ?? 0
     }
-
+    
+    // Hacemos un dateformat para que salga de forma correcta con una función.
     static func createDateTime(timestamp: Double) -> String {
         var time: Double = 0
         if timestamp > 1000000000000 && timestamp < 1000000000000000 {

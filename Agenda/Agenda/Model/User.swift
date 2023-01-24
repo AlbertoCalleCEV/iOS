@@ -14,6 +14,7 @@ class User: Codable {
         self.name = nombre
     }
     
+    // Creamos una funcion que nos permita guardar el usuario.
     func saveUser() {
         let encoder = JSONEncoder()
         if let data = try? encoder.encode(self) {
@@ -24,6 +25,7 @@ class User: Codable {
         }
     }
     
+    // Creamos una funcion que nos permita cargar el usuario.
     static func loadUser() -> User? {
         let data = UserDefaults.standard.object(forKey: "user")
         if data == nil {
@@ -32,7 +34,6 @@ class User: Codable {
         }
         let decoder = JSONDecoder()
         if let json = try? decoder.decode(User.self, from: data as! Data) {
-//            name = json.name
             return json
         } else {
             print("\n Error in loading User \n")

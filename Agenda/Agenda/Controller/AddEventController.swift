@@ -33,6 +33,7 @@ class AddEventController: UIViewController {
             URLSession.shared.dataTask(with: request){
                 (data, response, error) in
                 print(response as Any)
+                // Imprime el error en caso de que haya un fallo
                 if let error = error {
                     print(error)
                     return

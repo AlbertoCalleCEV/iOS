@@ -205,11 +205,11 @@
             </objects>
             <point key="canvasLocation" x="-4325" y="70"/>
         </scene>
-        <!--Item-->
+        <!--Events-->
         <scene sceneID="FG1-07-Zu1">
             <objects>
                 <navigationController id="nWe-ei-GZZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Wia-vE-yFF"/>
+                    <tabBarItem key="tabBarItem" title="Events" id="Wia-vE-yFF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CPb-eX-wUd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -338,7 +338,7 @@
             </objects>
             <point key="canvasLocation" x="-2001" y="70"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="xCP-0s-bUp">
             <objects>
                 <viewController id="3S3-Cx-NBO" customClass="UserController" customModule="Agenda" customModuleProvider="target" sceneMemberID="viewController">
@@ -382,7 +382,7 @@
                             <constraint firstItem="cP6-TT-pQM" firstAttribute="trailing" secondItem="57f-rC-iyV" secondAttribute="trailing" constant="100" id="eQL-lr-uqd"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="aYu-Oi-tbU"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="aYu-Oi-tbU"/>
                     <connections>
                         <outlet property="image" destination="XMA-Pq-Wkz" id="BmQ-zv-PvQ"/>
                         <outlet property="userName" destination="57f-rC-iyV" id="DdP-5m-pbG"/>

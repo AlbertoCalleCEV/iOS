@@ -15,23 +15,24 @@ class LoginController: UIViewController {
             else {
                 return
             }
-            // Le damos los datos del Array.
+            // Le damos los datos del Diccionario.
             let body: [String: String] = ["user": username.text!, "pass": password.text!]
             var request = URLRequest(url: url)
             
             // Creamos una variable de User para guardarla de manera local
             let user = User(nombre: username.text!)
             
-            // Pasamos a Json el Array.
+            // Pasamos a Json el Diccionario.
             let finalBody = try? JSONSerialization.data(withJSONObject: body)
             request.httpMethod = "POST"
             request.httpBody = finalBody // 
             
             URLSession.shared.dataTask(with: request){
                 (data, response, error) in
-                print("\nRESPONSE LOGIN:\n", response as Any)
+                print("\n RESPONSE LOGIN: \n", response as Any)
+                // Imprime el error en caso de que haya un fallo
                 if let error = error {
-                    print("\nERROR:\n", error)
+                    print("\n ERROR: \n", error)
                     return
                 }
                 guard let data = data else{
@@ -44,7 +45,7 @@ class LoginController: UIViewController {
                 
                 if String(data: data, encoding: .utf8) == "Login succesful" {
                     DispatchQueue.main.async {
-                        user.saveUser() // ???
+                        user.saveUser() // Guardamos el usuario creado anteriormente.
                         self.performSegue(withIdentifier: "login", sender: sender)
                     }
                 }
