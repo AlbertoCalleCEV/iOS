@@ -3,10 +3,11 @@ import UIKit
 class LoginController: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var incorrect: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        incorrect.isHidden = true
     }
     @IBAction func loginButton(_ sender: Any) {
         if username.text?.isEmpty == false && password.text?.isEmpty == false{
@@ -48,6 +49,9 @@ class LoginController: UIViewController {
                         user.saveUser() // Guardamos el usuario creado anteriormente.
                         self.performSegue(withIdentifier: "login", sender: sender)
                     }
+                }
+                else {
+                    self.incorrect.isHidden = false // Damos un mensaje de error al usuario.
                 }
             }.resume()
         }

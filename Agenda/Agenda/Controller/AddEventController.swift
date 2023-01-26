@@ -14,9 +14,9 @@ class AddEventController: UIViewController {
         let date = datePicker.date
         let dateseconds = Int(date.timeIntervalSince1970)
         
-        // declare the parameter as a dictionary that contains string as key and value combination. considering inputs are valid
         if eventName.text?.isEmpty == false {
             
+            // URL para hacer el GET.
             guard let url = URL(string:"https://superapi.netlify.app/api/db/eventos")
             else {
                 return
@@ -46,7 +46,7 @@ class AddEventController: UIViewController {
                     print("Error al recivir data.")
                     return
                 }
-                
+                print("\n\n\n")
                 print(data, String(data: data, encoding: .utf8) ?? "*unknown encoding*")
                 
             }.resume()

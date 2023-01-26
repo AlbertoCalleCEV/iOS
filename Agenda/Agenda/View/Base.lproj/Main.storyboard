@@ -19,7 +19,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMn-nj-MYe">
                                 <rect key="frame" x="20" y="79" width="374" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="42"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -27,35 +27,35 @@
                                 <rect key="frame" x="20" y="227" width="374" height="386"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncA-tF-yDB">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="75.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="73.5"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bt9-kS-zbd">
-                                        <rect key="frame" x="0.0" y="75.5" width="374" height="55.5"/>
+                                        <rect key="frame" x="0.0" y="73.5" width="374" height="57.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqe-kG-zqu">
-                                        <rect key="frame" x="0.0" y="131" width="374" height="75"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <rect key="frame" x="0.0" y="131" width="374" height="73.5"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jsx-wN-cp4">
-                                        <rect key="frame" x="0.0" y="206" width="374" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="204.5" width="374" height="54"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0I-74-lQj">
-                                        <rect key="frame" x="0.0" y="258.5" width="374" height="75"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <rect key="frame" x="0.0" y="258.5" width="374" height="73.5"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Ec-My-zOA">
-                                        <rect key="frame" x="0.0" y="333.5" width="374" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="332" width="374" height="54"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
@@ -63,12 +63,15 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3Y-fx-CE8">
                                 <rect key="frame" x="80" y="685" width="254" height="69"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="ET9-ON-KbY"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemMintColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Confirm">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="30"/>
+                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="registerButton:" destination="Xhl-JV-Dt8" eventType="touchUpInside" id="G2i-Up-zgM"/>
@@ -113,7 +116,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2e5-Az-C75">
                                 <rect key="frame" x="20" y="79" width="374" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="42"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -121,24 +124,24 @@
                                 <rect key="frame" x="20" y="227" width="374" height="236"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tA0-Ms-4NJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="69"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="67"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fjV-n8-yLb">
-                                        <rect key="frame" x="0.0" y="69" width="374" height="50.5"/>
+                                        <rect key="frame" x="0.0" y="67" width="374" height="52.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gch-0G-ENN">
-                                        <rect key="frame" x="0.0" y="119.5" width="374" height="68.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <rect key="frame" x="0.0" y="119.5" width="374" height="67"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m3w-t9-CUE">
-                                        <rect key="frame" x="0.0" y="188" width="374" height="48"/>
+                                        <rect key="frame" x="0.0" y="186.5" width="374" height="49.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
@@ -146,17 +149,26 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdO-3v-cug">
                                 <rect key="frame" x="80" y="535" width="254" height="69"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="wJY-aK-M2c"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemMintColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Confirm">
+                                    <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="30"/>
+                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="loginButton:" destination="lVk-SR-z7B" eventType="touchUpInside" id="iYb-Ys-lR6"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="User incorrect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijp-Nm-kQb">
+                                <rect key="frame" x="137" y="177" width="141" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97181984809999999" green="0.083061297320000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YY1-oj-8aM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -172,12 +184,15 @@
                             <constraint firstItem="YY1-oj-8aM" firstAttribute="trailing" secondItem="e1j-Os-zBx" secondAttribute="trailing" constant="20" id="j4W-Ym-v51"/>
                             <constraint firstItem="YY1-oj-8aM" firstAttribute="trailing" secondItem="QdO-3v-cug" secondAttribute="trailing" constant="80" id="lHJ-uh-zdA"/>
                             <constraint firstItem="e1j-Os-zBx" firstAttribute="leading" secondItem="YY1-oj-8aM" secondAttribute="leading" constant="20" id="ppk-ee-tfi"/>
+                            <constraint firstItem="ijp-Nm-kQb" firstAttribute="centerX" secondItem="Ije-Qd-oNi" secondAttribute="centerX" id="qO0-53-kfc"/>
                             <constraint firstItem="2e5-Az-C75" firstAttribute="top" secondItem="YY1-oj-8aM" secondAttribute="top" constant="35" id="w9b-eH-rKZ"/>
+                            <constraint firstItem="ijp-Nm-kQb" firstAttribute="top" secondItem="2e5-Az-C75" secondAttribute="bottom" constant="50" id="yqZ-E5-8a3"/>
                             <constraint firstItem="2e5-Az-C75" firstAttribute="leading" secondItem="YY1-oj-8aM" secondAttribute="leading" constant="20" id="zoI-Qp-avL"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Login" image="person" catalog="system" id="NLD-OH-jB5"/>
                     <connections>
+                        <outlet property="incorrect" destination="ijp-Nm-kQb" id="7xF-AN-Fgo"/>
                         <outlet property="password" destination="m3w-t9-CUE" id="Szt-Xd-3vb"/>
                         <outlet property="username" destination="fjV-n8-yLb" id="nxd-jp-HHM"/>
                         <segue destination="qBv-Wx-ajj" kind="presentation" identifier="login" modalPresentationStyle="fullScreen" id="okz-eG-OJc"/>
@@ -209,7 +224,7 @@
         <scene sceneID="FG1-07-Zu1">
             <objects>
                 <navigationController id="nWe-ei-GZZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Events" id="Wia-vE-yFF"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="calendar" catalog="system" id="Wia-vE-yFF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CPb-eX-wUd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -296,14 +311,33 @@
                                 <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                                 <color key="color" red="0.0014803857120000001" green="1" blue="0.73968183499999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dN-0i-pWr">
+                                <rect key="frame" x="20" y="663" width="130" height="58"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="LBz-xP-eVh"/>
+                                    <constraint firstAttribute="width" constant="130" id="fui-TV-GuH"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemMintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Reload">
+                                    <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="18"/>
+                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="reloadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ItZ-6J-4MO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4C3-q4-NN7" secondAttribute="trailing" constant="10" id="7yb-g7-Xyt"/>
+                            <constraint firstItem="3dN-0i-pWr" firstAttribute="top" secondItem="4C3-q4-NN7" secondAttribute="bottom" constant="50" id="Emr-0c-mno"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4C3-q4-NN7" secondAttribute="bottom" constant="200" id="Jni-dc-Lwh"/>
                             <constraint firstItem="J81-37-ja1" firstAttribute="top" secondItem="4C3-q4-NN7" secondAttribute="bottom" constant="50" id="KSc-3J-CNI"/>
                             <constraint firstItem="w1B-GM-5Aw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PfB-Ij-hwW"/>
+                            <constraint firstItem="3dN-0i-pWr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RTe-50-InP"/>
                             <constraint firstItem="4C3-q4-NN7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="TrH-fl-hns"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J81-37-ja1" secondAttribute="trailing" constant="20" id="cGL-ry-A09"/>
                             <constraint firstItem="4C3-q4-NN7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jaF-5h-gsU"/>
@@ -354,16 +388,17 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57f-rC-iyV">
-                                <rect key="frame" x="100" y="398" width="214" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <rect key="frame" x="100" y="398" width="214" height="45.5"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gv6-u1-BDB">
-                                <rect key="frame" x="57" y="272" width="93.5" height="26"/>
+                                <rect key="frame" x="57" y="272" width="96.5" height="26"/>
+                                <color key="tintColor" systemColor="systemMintColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Change Image">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
+                                    <fontDescription key="titleFontDescription" name="CourierNewPSMT" family="Courier New" pointSize="10"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="changeImage:" destination="3S3-Cx-NBO" eventType="touchUpInside" id="5kg-IE-kIg"/>
@@ -382,7 +417,9 @@
                             <constraint firstItem="cP6-TT-pQM" firstAttribute="trailing" secondItem="57f-rC-iyV" secondAttribute="trailing" constant="100" id="eQL-lr-uqd"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="aYu-Oi-tbU"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="aYu-Oi-tbU">
+                        <color key="badgeColor" systemColor="systemMintColor"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="image" destination="XMA-Pq-Wkz" id="BmQ-zv-PvQ"/>
                         <outlet property="userName" destination="57f-rC-iyV" id="DdP-5m-pbG"/>
@@ -415,6 +452,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="ADD EVENT">
                                     <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="30"/>
+                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="addEventButton:" destination="B3v-mV-4dK" eventType="touchUpInside" id="TO1-QB-R26"/>
@@ -457,6 +495,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="apps.iphone" catalog="system" width="108" height="128"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="secondaryLabelColor">
